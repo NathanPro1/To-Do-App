@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -29,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/your-username/to-do-app.git"
   },
-  "homepage": "https://your-username.github.io/to-do-app/",
+  "homepage": "https://NathanPro1.github.io/to-do-app/",
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
